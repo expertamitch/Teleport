@@ -76,18 +76,18 @@ class HomeBloc extends BlocBase {
 //TODO    test this in background, sometimes location stop updating, may be because it do not found profile bloc
 
     location.onLocationChanged().listen((LocationData currentLocation) {
-      updateCurrentMarker(currentLocation.latitude, currentLocation.longitude);
-      if (!commonSingleton.rider.value)
-        repository.updateLocation(
-            LocationModel(currentLocation.latitude, currentLocation.longitude,
-                DateTime.now().toIso8601String()),
-            commonSingleton.id.value);
+       updateCurrentMarker(currentLocation.latitude, currentLocation.longitude);
+//      if (!commonSingleton.rider.value)
+//        repository.updateLocation(
+//            LocationModel(currentLocation.latitude, currentLocation.longitude,
+//                DateTime.now().toIso8601String()),
+//            commonSingleton.id.value);
     });
 
     // Fired whenever a location is recorded
     bg.BackgroundGeolocation.onLocation((bg.Location location) {
       updateCurrentMarker(location.coords.latitude, location.coords.longitude);
-      print("UPDATING");
+      print("UPDATING:"+location.toString());
 
       if (!commonSingleton.rider.value)
         repository.updateLocation(
@@ -98,14 +98,14 @@ class HomeBloc extends BlocBase {
 
     // Fired whenever the plugin changes motion-state (stationary->moving and vice-versa)
     bg.BackgroundGeolocation.onMotionChange((bg.Location location) {
-      print("UPDATING");
 
-//      print('[motionchange] - $location');
+      print('[motionchange] - $location');
     });
 
     // Fired whenever the state of location-services changes.  Always fired at boot
     bg.BackgroundGeolocation.onProviderChange((bg.ProviderChangeEvent event) {
-//      print('[providerchange] - $event');
+
+      print('[providerchange] - $event');
     });
 
     // 2.  Configure the plugin
