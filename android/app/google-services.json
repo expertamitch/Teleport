@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "405774164618",
+    "firebase_url": "https://teleport-7000.firebaseio.com",
+    "project_id": "teleport-7000",
+    "storage_bucket": "teleport-7000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405774164618:android:4e6934c17546820b",
+        "android_client_info": {
+          "package_name": "com.andras.teleport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405774164618-3r94j3pvq8bqudopm1bke45fdvror176.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK44EFyph0uDtwvF32F8RtZNWfspUVhOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405774164618-3r94j3pvq8bqudopm1bke45fdvror176.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405774164618-dol7fqrmgdbr8n2gsfctij7ulds3e9jc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ncorp.teleport7000"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405774164618:android:75497426e3da478c",
+        "android_client_info": {
+          "package_name": "com.ncorp.teleport7000"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405774164618-3r94j3pvq8bqudopm1bke45fdvror176.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK44EFyph0uDtwvF32F8RtZNWfspUVhOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405774164618-3r94j3pvq8bqudopm1bke45fdvror176.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405774164618-dol7fqrmgdbr8n2gsfctij7ulds3e9jc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ncorp.teleport7000"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+{
+  "error": {
+    "error": "Error",
+    "emptyField": "This field must not be empty.",
+    "invalidEmail": "Invalid email.",
+    "passwordLength": "Password must be of atleast 6 characters.",
+    "passwordConfirmPassword": "Password and confirm password must match",
+    "common": "Something went wrong."
+  },
+  "navigate": {
+    "close": "Close",
+    "add": "Add",
+    "contact_support": "Contact Support"
+  },
+  "login": {
+    "title": "Sign in",
+    "email": "Email address",
+    "password": "Password",
+    "continue": "Continue",
+    "forgotPassword": "Forgot password?",
+    "register": "Register",
+    "notHaveAccount": "Don't you have an account yet?"
+  },
+  "signUp": {
+    "title": "Sign up",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "register": "Register",
+    "login": "Login",
+    "alreadyHaveAccount": "Already have an account?"
+  },
+  "settings": {
+    "title": "Account Settings",
+    "ride_settings": "Ride Settings",
+    "ride_settings_info": "Set your ride price, Ride length etc.",
+    "mode_settings": "Ride Mode",
+    "rider": "Rider",
+    "driver": "Driver",
+    "logout": "Logout"
+  },
+  "ride_settings": {
+    "title": "Ride Settings",
+    "info": "Customise your ride settings.",
+    "min_price": "Minimum Ride Price",
+    "min_length": "Minimum Ride Length",
+    "next_price": "Next Time Block Price",
+    "next_length": "Next Time Bloc Length",
+    "currency": "Currency",
+    "save": "Save"
+  },
+  "drawer": {
+    "settings": "Settings",
+    "settings_info": "Ride settings, change mode and more.",
+    "payment_options": "Add payment option",
+    "payment_options_info": "Add a method for payment of your rides.",
+    "ride_history": "Ride History",
+    "ride_history_info": "See your past rides.",
+    "profile": "Profile",
+    "profile_info": "Edit and view profile.",
+    "about_us": "About us",
+    "about_us_info": "Know about us."
+  },
+  "edit_profile": {
+    "title": "Edit Profile",
+    "nickname": "Nickname",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email",
+    "phone_number": "Phone Number"
+  },
+  "image_picker": {
+    "title": "Pick Image",
+    "camera": "Camera",
+    "gallary": "Gallary"
+  },
+  "ride_history": {
+    "title": "Ride History",
+    "rides": "Your Rides",
+    "hired": "Hired"
+  },
+  "ride_params": {
+    "title": "Ride Parameters",
+    "min_price": "Minimum Ride Price",
+    "min_length": "Minimum Ride Length",
+    "next_price": "Next Time Block Length",
+    "next_length": "Next Time Bloc Price",
+    "currency": "Currency",
+    "request": "Request Ride"
+  },
+  "add_card": {
+    "title": "Do you want to add card?"
+  }
+}

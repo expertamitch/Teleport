@@ -1,0 +1,45 @@
+{
+  "error": {
+    "error": "Error",
+    "emptyField": "This field must not be empty.",
+    "invalidEmail": "Invalid email.",
+    "passwordLength": "Password must be of atleast 6 characters.",
+    "passwordConfirmPassword": "Password and confirm password must match"
+  },
+  "navigate": {
+    "close": "Close"
+  },
+  "login": {
+    "title": "Sign in",
+    "email": "ईमेल पता",
+    "password": "Password",
+    "continue": "Continue",
+    "forgotPassword": "Forgot password?",
+    "register": "Register",
+    "notHaveAccount": "Don't you have an account yet?"
+  },
+  "signUp": {
+    "title": "Sign up",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "register": "Register",
+    "login": "Login",
+    "alreadyHaveAccount": "Already have an account?"
+  },
+  "title": "Hello",
+  "msg": "Hello {} in the {} world ",
+  "clickMe": "Click me",
+  "profile": {
+    "reset_password": {
+      "title": "Reset Password",
+      "username": "Username",
+      "password": "password"
+    }
+  },
+  "clicked": {
+    "zero": "You clicked {} times!",
+    "one": "You clicked {} time!",
+    "other": "You clicked {} times!"
+  }
+}
