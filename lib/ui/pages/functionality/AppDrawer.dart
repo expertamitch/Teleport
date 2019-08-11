@@ -243,7 +243,7 @@ class _AppDrawerState extends State<AppDrawer> {
                                 ))),
                     getSizedBox(size.width * 0.03, 0.0),
                     Container(
-                        width: size.width * 0.4,
+                        width: size.width * 0.3,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[

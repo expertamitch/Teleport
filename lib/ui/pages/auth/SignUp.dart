@@ -39,7 +39,7 @@ class SignUpState extends State<SignUp> {
             _emailController.value.copyWith(text: snapshot.data);
         return TextFormField(
             onFieldSubmitted: (val) {
-              _formKey.currentState.save();
+//              _formKey.currentState.save();
               _emailFocusNode.unfocus();
               FocusScope.of(context).requestFocus(_passwordFocusNode);
             },
@@ -134,7 +134,7 @@ class SignUpState extends State<SignUp> {
           controller: _confirmPasswordController,
           onFieldSubmitted: (val) {
             _confirmPasswordFocusNode.unfocus();
-            _formKey.currentState.save();
+            //  _formKey.currentState.save();
           },
           onSaved: _bloc.changeConfirmPassword,
           textAlign: TextAlign.start,

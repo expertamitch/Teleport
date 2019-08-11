@@ -15,7 +15,7 @@ class _RideHistoryState extends State<RideHistory> {
     var al = AppLocalizations.of(context);
     var data = EasyLocalizationProvider.of(context).data;
 
-    var item = Container(
+    var item = Card(child: Container(
         color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -41,7 +41,7 @@ class _RideHistoryState extends State<RideHistory> {
                   ],
                 )
               ]),
-        ));
+        )) , elevation: 1,);
 
     var list = ListView.builder(
         padding: EdgeInsets.only(bottom: 10),

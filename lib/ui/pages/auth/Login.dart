@@ -19,6 +19,7 @@ class SignInScreenState extends State<Login> {
   LoginBloc _bloc;
   FocusNode _emailFocusNode = FocusNode();
   FocusNode _passwordFocusNode = FocusNode();
+
   @override
   void dispose() {
     _bloc.dispose();
@@ -47,7 +48,7 @@ class SignInScreenState extends State<Login> {
             textInputAction: TextInputAction.next,
             validator: _bloc.emailValidator,
             onFieldSubmitted: (val) {
-              _formKey.currentState.save();
+//              _formKey.currentState.save()
               _emailFocusNode.unfocus();
               FocusScope.of(context).requestFocus(_passwordFocusNode);
             },
@@ -92,7 +93,7 @@ class SignInScreenState extends State<Login> {
             textInputAction: TextInputAction.done,
             controller: _passwordController,
             onFieldSubmitted: (val) {
-              _formKey.currentState.save();
+//              _formKey.currentState.save();
               _passwordFocusNode.unfocus();
             },
 
