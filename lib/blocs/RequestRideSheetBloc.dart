@@ -6,6 +6,7 @@ import 'package:teleport/models/RideParamsModel.dart';
 import 'package:teleport/network/Repository.dart';
 import 'package:teleport/ui/pages/functionality/AddCardDialog.dart';
 import 'package:teleport/ui/pages/functionality/ContactSupportError.dart';
+import 'package:teleport/ui/pages/functionality/RideInProgress.dart';
 import 'package:teleport/ui/widgets/ErrorDialog.dart';
 
 import 'BlocBase.dart';
@@ -26,6 +27,9 @@ class RequestRideSheetBloc extends BlocBase {
 
     repository.createRide(rideParamsModel).then((res) {
       isLoadingController.sink.add(false);
+      Navigator.pop(context);
+      Navigator.of(context).push(CupertinoPageRoute(
+          builder: (BuildContext context) => RideInProgress()));
     }).catchError((error) {
       isLoadingController.sink.add(false);
 

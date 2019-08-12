@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization_delegate.dart';
 import 'package:easy_localization/easy_localization_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teleport/blocs/LoginBloc.dart';
 import 'package:teleport/common_utils/Palette.dart';
@@ -141,7 +142,7 @@ class SignInScreenState extends State<Login> {
 
   changePageToSignUp(BuildContext context) {
     Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (BuildContext context) => SignUp()),
+        CupertinoPageRoute(builder: (BuildContext context) => SignUp()),
         (_) => false);
   }
 

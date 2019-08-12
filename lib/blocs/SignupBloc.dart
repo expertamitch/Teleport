@@ -158,7 +158,7 @@ class SignUpBloc extends BlocBase {
         commonSingleton.updateProfile(userObj);
 
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (BuildContext context) => Home()),
+            CupertinoPageRoute(builder: (BuildContext context) => Home()),
             (_) => false);
       });
     });

@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization_delegate.dart';
 import 'package:easy_localization/easy_localization_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teleport/blocs/CommonSingleton.dart';
 import 'package:teleport/ui/pages/stripe/AddCard.dart';
@@ -10,9 +11,11 @@ import 'RideHistory.dart';
 import 'package:stripe_payment/stripe_payment.dart';
 
 class AppDrawer extends StatefulWidget {
+
   @override
   State<StatefulWidget> createState() => _AppDrawerState();
-}
+
+ }
 
 class _AppDrawerState extends State<AppDrawer> {
   @override
@@ -289,21 +292,28 @@ class _AppDrawerState extends State<AppDrawer> {
   }
 
   void navigateToSettings() {
+    Navigator.pop(context);
+
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (BuildContext context) => Settings()));
+        .push(CupertinoPageRoute(builder: (BuildContext context) => Settings()));
   }
 
   void navigateToEditProfile() {
+    Navigator.pop(context);
+
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (BuildContext context) => UserProfile()));
+        CupertinoPageRoute(builder: (BuildContext context) => UserProfile()));
   }
 
   void navigateToRideHistory() {
+    Navigator.pop(context);
+
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (BuildContext context) => RideHistory()));
+        CupertinoPageRoute(builder: (BuildContext context) => RideHistory()));
   }
 
   void paymentOptions() {
+Navigator.pop(context);
     AddCard(context).getCard();
 
 

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teleport/blocs/MainBloc.dart';
 import 'package:teleport/common_utils/CodeConstants.dart';
@@ -35,7 +36,7 @@ class _SplashState extends State<Splash> {
     Timer(
         Duration(seconds: 5),
         () => Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (BuildContext context) => screen),
+            CupertinoPageRoute(builder: (BuildContext context) => screen),
             (_) => false));
   }
 

@@ -310,6 +310,10 @@ class _RideSettingsState extends State<RideSettings> {
       ),
     );
 
+    if(_bloc.currencyController.value!=null){
+      currencyValue=_bloc.currencyController.value;
+    }
+
     return EasyLocalizationProvider(
       data: data,
       child: Scaffold(

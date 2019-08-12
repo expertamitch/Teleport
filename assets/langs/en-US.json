@@ -90,5 +90,9 @@
   },
   "add_card": {
     "title": "Do you want to add card?"
+  },
+  "ride_in_progress": {
+    "title": "Ride Progress",
+    "ride_in_progress": "Ride In Progress"
   }
 }

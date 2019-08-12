@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization_delegate.dart';
 import 'package:easy_localization/easy_localization_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teleport/blocs/SettingsBloc.dart';
 import 'package:teleport/blocs/CommonSingleton.dart';
@@ -305,6 +306,6 @@ class _SettingsState extends State<Settings> {
 
   void navigateToRideSettings() {
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (BuildContext context) => RideSettings()));
+        CupertinoPageRoute(builder: (BuildContext context) => RideSettings()));
   }
 }

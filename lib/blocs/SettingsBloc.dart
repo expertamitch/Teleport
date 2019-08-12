@@ -65,7 +65,7 @@ class SettingsBloc extends BlocBase {
 
   void navigateToLogin(context) {
     Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (BuildContext context) => Login()),
+        CupertinoPageRoute(builder: (BuildContext context) => Login()),
         (_) => false);
   }
 }

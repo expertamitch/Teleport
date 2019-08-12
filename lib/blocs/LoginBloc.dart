@@ -102,7 +102,7 @@ class LoginBloc extends BlocBase {
 
         SharedPref().save(CodeConstants.USER_ID, uid).then((uid) {
           Navigator.of(context).pushAndRemoveUntil(
-              MaterialPageRoute(builder: (BuildContext context) => Home()),
+              CupertinoPageRoute(builder: (BuildContext context) => Home()),
               (_) => false);
         });
       } else {
@@ -124,7 +124,7 @@ class LoginBloc extends BlocBase {
   void navigateToHome(context, uid) {
     SharedPref().save(CodeConstants.USER_ID, uid).then((uid) {
       Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (BuildContext context) => Home()),
+          CupertinoPageRoute(builder: (BuildContext context) => Home()),
           (_) => false);
     });
   }

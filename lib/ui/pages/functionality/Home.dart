@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
         key: _scaffoldKey,
         drawer: Drawer(
-          child: AppDrawer(),
+          child: AppDrawer( ),
         ),
         body: StreamBuilder(
           stream: bloc.allMarkers,
